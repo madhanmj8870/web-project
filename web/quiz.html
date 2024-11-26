@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create and manage online quizzes effortlessly.">
+    <title>Quiz Creator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            padding: 20px;
+        }
+        .form-group {
+            margin: 10px 0;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Quiz Creator</h1>
+        <p>Create, manage, and share quizzes easily!</p>
+    </header>
+    <nav>
+        <a href="#create-quiz">Create Quiz</a>
+        <a href="#view-quizzes">View Quizzes</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="create-quiz">
+            <h2>Create a New Quiz</h2>
+            <form>
+                <div class="form-group">
+                    <label for="quiz-title">Quiz Title</label>
+                    <input type="text" id="quiz-title" name="quiz-title" placeholder="Enter quiz title" required>
+                </div>
+                <div class="form-group">
+                    <label for="quiz-description">Description</label>
+                    <textarea id="quiz-description" name="quiz-description" rows="4" placeholder="Enter a brief description"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="quiz-question">Question</label>
+                    <input type="text" id="quiz-question" name="quiz-question" placeholder="Enter your question" required>
+                </div>
+                <div class="form-group">
+                    <label for="quiz-options">Options (comma-separated)</label>
+                    <input type="text" id="quiz-options" name="quiz-options" placeholder="Option 1, Option 2, Option 3, Option 4" required>
+                </div>
+                <div class="form-group">
+                    <label for="quiz-answer">Correct Answer</label>
+                    <input type="text" id="quiz-answer" name="quiz-answer" placeholder="Enter the correct answer" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Save Quiz</button>
+                </div>
+            </form>
+        </section>
+        <section id="view-quizzes">
+            <h2>View Created Quizzes</h2>
+            <p>Quizzes will be displayed here once created.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@quizcreator.com</p>
+            <p>Phone: +123 456 7890</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Quiz Creator. All rights reserved.</p>
+    </footer>
+</body>
+</html>
